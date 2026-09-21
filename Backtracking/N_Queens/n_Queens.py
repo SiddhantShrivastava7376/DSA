@@ -1,4 +1,5 @@
 import copy
+from typing import List
 
 def solveNQueens(n: int) -> List[List[str]]:
 
