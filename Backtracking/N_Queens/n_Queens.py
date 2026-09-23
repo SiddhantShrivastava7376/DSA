@@ -5,7 +5,6 @@ def solveNQueens(n: int) -> List[List[str]]:
 
     board = [['.' for _ in range(n)] for _ in range(n)]
     row = 0
-    col = 0
     solutions = []
 
 
@@ -56,8 +55,6 @@ def solveNQueens(n: int) -> List[List[str]]:
                 return True
 
         for col in range(n):
-
-            safe = isSafe(row, col, board)
 
             if isSafe(row, col, board):
 
